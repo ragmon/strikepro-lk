@@ -11,7 +11,7 @@ export const getCategory = (id) => {
         dispatch({type: GET_CATEGORY_LOAD, payload: true});
 
         return new Promise((resolve, reject) => {
-            const url = `http://alex.taran.ru/api/v1/catalog${id ? id : ''}`;
+            const url = `https://new.strikepro.ru/api/v1/catalog${id ? id : ''}`;
             fetch(url, {
                 method: 'GET',
                 credentials: 'include',
